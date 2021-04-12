@@ -1,3 +1,4 @@
+//Peticiones AJAX
 $(document).ready(function () {
     $('#formulario').bind("submit",function(){
         //Capturamos el boton de envío
