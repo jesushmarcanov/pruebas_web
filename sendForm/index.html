@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+
+    <title>Envio de Formulario a PHP con AJAX y JQuery</title>
+</head>
+<body>
+    
+    <main role="main" class="container my-auto">
+        <div class="row">
+            <div class="col-lg-4 col-12">
+                <h2 class="text-center">Enviar Formulario</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="nombre">EMail</label>
+                        <input type="text" id="email" name="email" class="form-control" placeholder="EMail">
+                    </div>
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="nombre">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" class="form-control" placeholder="Apellido">
+                    </div>
+                    <div class="form-group">
+                        <label for="nombre">FEcha de Nacimiento</label>
+                        <input type="date" id="fnac" name="fnac" class="form-control" placeholder="FEcha de Nacimiento">
+                    </div>
+                    <div class="form-group">
+                        <label for="nombre">Tratamiento</label>
+                        <select name="tratamiento" id="tratamiento" class="form-control">
+                            <option value="1">Sra</option>
+                            <option value="2">Srta</option>
+                            <option value="3">Sr</option>
+                            <option value="4">Prefiero no decirlo</option>
+                        </select>
+                        <!-- <input type="text" id="tratamiento" name="nombre" class="form-control" placeholder="Tratamiento"> -->
+                    </div>
+                    <div class="form-group">
+                        <label for="nombre">Clave</label>
+                        <input type="text" id="clave" name="clave" class="form-control" placeholder="Clave">
+                    </div>
+                    <div class="form-group">
+                        <label for="nombre">Teléfono</label>
+                        <input type="text" id="telefono" name="telefono" class="form-control" placeholder="Teléfono">
+                    </div>
+                    <div id="respuesta" class="alert alert-success">
+
+                    </div>
+                    <button type="button" id="btnEnviar" class="btn btn-primary mb-2">Enviar</button>
+                </form>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <!-- <script src="./js/script.js"></script> -->
+    <script src="./js/enviar.js"></script>
+</body>
+</html>
